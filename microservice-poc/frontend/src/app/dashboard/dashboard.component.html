@@ -1,0 +1,11 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link">Home</a>
+        <a class="nav-item nav-link" *ngIf="currentUser.type == '1'">Product</a>
+       
+    </div>
+  </nav>
+
+<h1>Hi {{currentUser.username}}!</h1>
+<p>dashboard works!</p>
